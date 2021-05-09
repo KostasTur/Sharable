@@ -1,0 +1,66 @@
+.contact {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+.contact-container {
+  width: 100%;
+  padding: 0 15px 0 15px;
+  max-width: 540px;
+}
+.contact-form {
+}
+form input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0;
+  border: 1px solid grey;
+  margin-bottom: 1rem;
+}
+
+.location {
+  margin-top: 3rem;
+}
+.location p {
+  color: grey;
+}
+.fa-map-marker {
+  color: red;
+}
+.google-maps iframe {
+  width: 100%;
+  max-height: 100%;
+}
+
+/* tablet */
+@media screen and (min-width: 769px) {
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 720px;
+  }
+  .contact-form {
+    max-width: 50%;
+    padding: 0 1rem 0 1rem;
+  }
+  .location {
+    padding: 0 1rem 0 1rem;
+    margin: 0 auto;
+  }
+  .google-maps {
+    padding-top: 2rem;
+    border-top: 1px solid grey;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1000px) {
+  .contact-container {
+    max-width: 1200px;
+  }
+  .google-maps iframe {
+    height: 200px;
+    width: 400px;
+  }
+}
